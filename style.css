@@ -70,17 +70,16 @@ body {
   .shirt-preview {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
     margin-bottom: 1.5rem;
   }
   
   .shirt-preview img {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   }
+  
   
   .buy-button {
     display: inline-block;
