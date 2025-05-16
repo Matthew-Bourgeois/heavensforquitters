@@ -101,7 +101,7 @@ nav a {
   border-radius: 4px;
 }
 
-/* GENERAL SECTION STYLING */
+/* SECTION GENERAL */
 
 section {
   padding: 3rem 2rem;
@@ -193,7 +193,7 @@ blockquote {
   margin-bottom: 2rem;
 }
 
-/* CAROUSEL SECTION */
+/* === CAROUSEL SECTION === */
 
 .slider-container {
   width: 100%;
@@ -206,7 +206,7 @@ blockquote {
 .slider-track {
   display: flex;
   width: 300%;
-  animation: scrollSlider 15s linear infinite;
+  animation: scrollSlider 48s ease-in-out infinite;
 }
 
 .slide {
@@ -215,7 +215,8 @@ blockquote {
   justify-content: center;
   align-items: center;
   background-color: #111;
-  padding: 2rem;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -227,10 +228,17 @@ blockquote {
 }
 
 .slide-placeholder {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
   color: #ffd700;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+  max-width: 90%;
+  margin: auto;
+  line-height: 1.6;
 }
 
 @keyframes scrollSlider {
@@ -274,7 +282,9 @@ footer {
   font-size: 0.9rem;
   color: #888;
 }
+
 /* === RESPONSIVE DESIGN === */
+
 @media (max-width: 768px) {
   header h1, .site-title span {
     font-size: 2rem;
