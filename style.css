@@ -63,13 +63,28 @@ nav a {
 /* HERO SECTION */
 
 #hero {
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   text-align: center;
-  background: #1c1c1c;
+  background: url('assets/crucifixion.jpg') center center/cover no-repeat;
+  position: relative;
+  color: #f4f4f4;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+#hero h2, #hero p, #hero blockquote, #hero a {
+  position: relative;
+  z-index: 1;
 }
 
 #hero h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 2px;
   margin-bottom: 1rem;
   color: #ffd700;
@@ -280,3 +295,4 @@ footer {
   font-size: 0.9rem;
   color: #888;
 }
+
