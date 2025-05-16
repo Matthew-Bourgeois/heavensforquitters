@@ -1,17 +1,48 @@
 <!DOCTYPE html>
-<html lang="="en">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Quit Sin. Follow God. Apparel that reflects real repentance and bold faith.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Quit Sin. Follow God. Apparel that reflects real repentance and bold faith." />
   <title>Heaven's for Quitters</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <!-- 🔊 Worship Music Player -->
+  <audio id="bg-music" loop>
+    <source src="audio/backgroundmusic.wav" type="audio/wav" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- 🎵 Music Toggle Button -->
+  <div style="text-align: center; margin: 1rem 0;">
+    <button onclick="toggleMusic()" style="padding: 0.6rem 1.2rem; font-size: 1rem; font-weight: bold; background-color: #ffd700; color: #111; border: none; border-radius: 6px; cursor: pointer; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);">
+      🎵 Play Worship Music
+    </button>
+  </div>
+
+  <script>
+    const music = document.getElementById('bg-music');
+    let isPlaying = false;
+
+    function toggleMusic() {
+      if (isPlaying) {
+        music.pause();
+        event.target.innerText = '🎵 Play Worship Music';
+      } else {
+        music.play();
+        event.target.innerText = '⏸️ Pause Worship Music';
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
+
   <header>
     <h1>HEAVEN'S FOR QUITTERS</h1>
     <p class="tagline">Quit Sin. Follow God.</p>
+    <hr class="tagline-divider" />
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -24,10 +55,10 @@
 
   <main>
     <section id="hero">
-      <h2>Eternity starts with surrender.</h2>
-      <p>Wear your message. Spread the mission. Start with one shirt.</p>
+      <h2>You’re not too far gone.</h2>
+      <p>Jesus didn’t die for the perfect—He died for the broken. This brand is for the ones who’ve fallen hard and got back up because of Him.</p>
       <blockquote>
-        "Whoever believes in the Son has eternal life, but whoever rejects the Son will not see life, for God’s wrath remains on them." — John 3:36
+        "Come to me, all who are weary and burdened, and I will give you rest." — Matthew 11:28
       </blockquote>
       <a href="#shop" class="cta">Wear the Mission</a>
     </section>
@@ -43,21 +74,17 @@
     </section>
 
     <section id="cost-of-sin">
-        <div class="overlay">
-          <h2>The Cost of Sin</h2>
-          <blockquote>
-            “He was pierced for our transgressions, He was crushed for our iniquities…”<br>
-            <small>— Isaiah 53:5</small>
-          </blockquote>
-          <a href="#shop" class="cta">It Was Paid For. Wear It Boldly.</a>
-        </div>
-      </section>
-      
+      <div class="overlay">
+        <h2>The Cost of Sin</h2>
+        <p class="subtitle">He paid it. We wear it.</p>
+        <a href="#shop" class="cta">It Was Paid For. Wear It Boldly.</a>
+      </div>
+    </section>
 
     <section id="shop">
       <h2>Repentance You Can Wear</h2>
       <div class="shirt-preview">
-        <img src="assets/drunkardshirt.png" alt="Heaven's for Quitters shirt design">
+        <img src="assets/drunkardshirt.png" alt="Heaven's for Quitters shirt design" />
       </div>
       <p><strong>Verse Shirt – 1 Corinthians 6:10</strong></p>
       <p>A bold reminder of the battle we all face. Designed to convict, worn to witness.</p>
@@ -71,66 +98,40 @@
     <section id="collection">
       <h2>7 Deadly Sins Collection</h2>
       <div class="sins-grid">
-
         <div class="sin-item">
-          <img src="assets/drunkardshirt.png" alt="Drunkard shirt design">
+          <img src="assets/drunkardshirt.png" alt="Drunkard shirt design" />
           <h3>Gluttony / Drunkenness</h3>
-          <p>“…nor drunkards will inherit the kingdom of God.” <br><small>— 1 Corinthians 6:10</small></p>
+          <p>“…nor drunkards will inherit the kingdom of God.” <br /><small>— 1 Corinthians 6:10</small></p>
         </div>
-
-        <div class="sin-item">
-          <div class="coming-soon">Coming Soon</div>
-          <h3>Pride</h3>
-          <p>“God opposes the proud but shows favor to the humble.” <br><small>— James 4:6</small></p>
-        </div>
-
-        <div class="sin-item">
-          <div class="coming-soon">Coming Soon</div>
-          <h3>Lust</h3>
-          <p>“Flee from sexual immorality. All other sins a person commits are outside the body...” <br><small>— 1 Corinthians 6:18</small></p>
-        </div>
-
-        <div class="sin-item">
-          <div class="coming-soon">Coming Soon</div>
-          <h3>Greed</h3>
-          <p>“For the love of money is a root of all kinds of evil.” <br><small>— 1 Timothy 6:10</small></p>
-        </div>
-
-        <div class="sin-item">
-          <div class="coming-soon">Coming Soon</div>
-          <h3>Envy</h3>
-          <p>“A heart at peace gives life to the body, but envy rots the bones.” <br><small>— Proverbs 14:30</small></p>
-        </div>
-
-        <div class="sin-item">
-          <div class="coming-soon">Coming Soon</div>
-          <h3>Wrath</h3>
-          <p>“Everyone who is angry with his brother will be liable to judgment…” <br><small>— Matthew 5:22</small></p>
-        </div>
-
-        <div class="sin-item">
-          <div class="coming-soon">Coming Soon</div>
-          <h3>Sloth</h3>
-          <p>“The way of the sluggard is blocked with thorns…” <br><small>— Proverbs 15:19</small></p>
-        </div>
-
+        <!-- Other sins coming soon cards -->
+        <div class="sin-item"><div class="coming-soon">Coming Soon</div><h3>Pride</h3><p>“God opposes the proud but shows favor to the humble.” <br /><small>— James 4:6</small></p></div>
+        <div class="sin-item"><div class="coming-soon">Coming Soon</div><h3>Lust</h3><p>“Flee from sexual immorality...” <br /><small>— 1 Corinthians 6:18</small></p></div>
+        <div class="sin-item"><div class="coming-soon">Coming Soon</div><h3>Greed</h3><p>“The love of money is a root of all kinds of evil.” <br /><small>— 1 Timothy 6:10</small></p></div>
+        <div class="sin-item"><div class="coming-soon">Coming Soon</div><h3>Envy</h3><p>“Envy rots the bones.” <br /><small>— Proverbs 14:30</small></p></div>
+        <div class="sin-item"><div class="coming-soon">Coming Soon</div><h3>Wrath</h3><p>“Anger leads to judgment…” <br /><small>— Matthew 5:22</small></p></div>
+        <div class="sin-item"><div class="coming-soon">Coming Soon</div><h3>Sloth</h3><p>“The sluggard's path is full of thorns…” <br /><small>— Proverbs 15:19</small></p></div>
       </div>
+    </section>
+
+    <!-- GOSPEL SECTION -->
+    <section style="background: #222; padding: 3rem 2rem; text-align: center; color: #ffd700;">
+      <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2rem;">The Gospel in One Sentence</h2>
+      <p style="max-width: 700px; margin: 1rem auto; font-size: 1.1rem; color: #f4f4f4;">
+        Jesus Christ, the Son of God, took the punishment we deserved, died the death we earned, and rose again so we could walk in freedom—if we turn from sin and trust in Him.
+      </p>
+      <a href="#contact" class="cta">I Want to Know Jesus</a>
     </section>
 
     <section id="contact">
       <h2>Get in Touch</h2>
       <form action="https://formspree.io/f/xqaqydqy" method="POST">
-        <input type="hidden" name="_redirect" value="thankyou.html">
-
+        <input type="hidden" name="_redirect" value="thankyou.html" />
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
+        <input type="text" id="name" name="name" required />
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
+        <input type="email" id="email" name="email" required />
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
-
         <button type="submit">Send Message</button>
       </form>
       <p>Email us: <a href="mailto:heavensforquitters@gmail.com">heavensforquitters@gmail.com</a></p>
@@ -144,4 +145,3 @@
   </footer>
 </body>
 </html>
-
