@@ -205,9 +205,11 @@ blockquote {
 
 .slider-track {
   display: flex;
-  width: 300%;
-  animation: scrollSlider 48s ease-in-out infinite;
+  width: 200%;
+  gap: 0;
+  animation: scrollSlider  60s linear infinite;
 }
+
 
 .slide {
   flex: 0 0 100%;
