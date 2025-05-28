@@ -205,14 +205,14 @@ blockquote {
 
 .slider-track {
   display: flex;
-  width: 200%;
-  gap: 0;
-  animation: scrollSlider  60s linear infinite;
+  width: max-content;
+  animation: scrollSlider 200s linear infinite;
 }
 
-
 .slide {
-  flex: 0 0 100%;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 600px; /* same as .slider-container */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,11 +244,15 @@ blockquote {
 }
 
 @keyframes scrollSlider {
-  0% { transform: translateX(0%); }
-  33.33% { transform: translateX(-100%); }
-  66.66% { transform: translateX(-200%); }
-  100% { transform: translateX(-300%); }
+  0%    { transform: translateX(0%); }
+  20%   { transform: translateX(-100%); }
+  40%   { transform: translateX(-200%); }
+  60%   { transform: translateX(-300%); }
+  100%  { transform: translateX(-300%); } /* hold final slide */
 }
+}
+
+
 
 /* CONTACT FORM */
 
