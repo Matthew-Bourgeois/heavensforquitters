@@ -97,32 +97,25 @@
 
     <section id="collection">
       <h2>HEAVEN'S FOR QUITTERS COLLECTION</h2>
-      <div class="slider-container">
-        <div class="slider-track">
-          <!-- Slides -->
-          <div class="slide"><img src="assets/drunkardshirt.png" alt="Drunkard Shirt" /></div>
-          <div class="slide"><img src="assets/quitsin.png" alt="Quit Sin Shirt" /></div>
-          <div class="slide"><img src="assets/To_Live.png" alt="To Live Shirt" /></div>
-          <div class="slide"><img src="assets/Flee_Lust.png" alt="Flee from Lust Shirt" /></div>
-          <div class="slide">
-            <div class="slide-placeholder">
-              <h3>More Designs Coming Soon</h3>
-              <p>Convicting. Bold. Biblical.</p>
-            </div>
-          </div>
+      <div class="slider-wrapper">
+        <button class="slider-btn left" onclick="scrollSlider(-1)">&#8592;</button>
 
-          <!-- Duplicated for seamless loop -->
-          <div class="slide"><img src="assets/drunkardshirt.png" alt="Drunkard Shirt" /></div>
-          <div class="slide"><img src="assets/quitsin.png" alt="Quit Sin Shirt" /></div>
-          <div class="slide"><img src="assets/To_Live.png" alt="To Live Shirt" /></div>
-          <div class="slide"><img src="assets/Flee_Lust.png" alt="Flee from Lust Shirt" /></div>
-          <div class="slide">
-            <div class="slide-placeholder">
-              <h3>More Designs Coming Soon</h3>
-              <p>Convicting. Bold. Biblical.</p>
+        <div class="slider-container">
+          <div id="sliderTrack" class="slider-track">
+            <div class="slide"><img src="assets/drunkardshirt.png" alt="Drunkard Shirt" /></div>
+            <div class="slide"><img src="assets/quitsin.png" alt="Quit Sin Shirt" /></div>
+            <div class="slide"><img src="assets/To_Live.png" alt="To Live Shirt" /></div>
+            <div class="slide"><img src="assets/Flee_Lust.png" alt="Flee from Lust Shirt" /></div>
+            <div class="slide">
+              <div class="slide-placeholder">
+                <h3>More Designs Coming Soon</h3>
+                <p>Convicting. Bold. Biblical.</p>
+              </div>
             </div>
           </div>
         </div>
+
+        <button class="slider-btn right" onclick="scrollSlider(1)">&#8594;</button>
       </div>
     </section>
 
@@ -131,7 +124,6 @@
       <p style="max-width:700px; margin:1rem auto; font-size:1.1rem; color:#f4f4f4;">
         Jesus Christ, the Son of God, took the punishment we deserved, died the death we earned, and rose again so we could walk in freedom—if we turn from sin and trust in Him.
       </p>
-      
     </section>
 
     <section style="background:#111; padding:3rem 2rem; color:#ffd700; text-align:center;">
@@ -164,5 +156,24 @@
     <p>“Let your light shine before others…” — Matthew 5:16</p>
     <p>&copy; 2025 Heaven's for Quitters. All rights reserved.</p>
   </footer>
+
+  <!-- 👇 Manual slide controls -->
+  <script>
+    let currentSlide = 0;
+
+    function scrollSlider(direction) {
+      const slider = document.getElementById("sliderTrack");
+      const slides = slider.querySelectorAll(".slide");
+      const slideWidth = slides[0].offsetWidth;
+
+      currentSlide += direction;
+
+      if (currentSlide < 0) currentSlide = 0;
+      if (currentSlide >= slides.length) currentSlide = slides.length - 1;
+
+      slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    }
+  </script>
 </body>
 </html>
+
