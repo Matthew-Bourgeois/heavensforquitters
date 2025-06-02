@@ -17,7 +17,7 @@ header {
 .site-title span {
   font-size: 3rem;
   letter-spacing: 4px;
-  color: #ffd700;
+  color: #C99A3D;
   font-family: 'Bebas Neue', sans-serif;
   text-shadow: 2px 2px 5px #000;
   text-transform: uppercase;
@@ -26,7 +26,7 @@ header {
 .tagline {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #ffcc00;
+  color: #C99A3D;
   text-shadow: 1px 1px 3px #000;
   margin-top: 0.5rem;
   letter-spacing: 1px;
@@ -38,7 +38,7 @@ header {
   height: 2px;
   width: 60%;
   margin: 1rem auto;
-  background: linear-gradient(to right, #ffd700, #fff, #ffd700);
+  background: linear-gradient(to right, #C99A3D, #fff, #C99A3D);
 }
 
 /* NAVIGATION */
@@ -83,7 +83,7 @@ nav a {
   font-size: 2.5rem;
   letter-spacing: 2px;
   margin-bottom: 1rem;
-  color: #ffd700;
+  color: #C99A3D;
   font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -91,7 +91,7 @@ nav a {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: #ffd700;
+  background-color: #C99A3D;
   color: #111;
   font-weight: bold;
   text-decoration: none;
@@ -110,14 +110,14 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 800;
-  color: #ffd700;
+  color: #C99A3D;
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
 blockquote {
   background: #222;
-  border-left: 4px solid #ffd700;
+  border-left: 4px solid #C99A3D;
   padding: 1rem;
   font-style: italic;
   margin: 2rem auto;
@@ -143,13 +143,13 @@ blockquote {
 .price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #ffd700;
+  color: #C99A3D;
   margin-bottom: 1rem;
 }
 
 .buy-button {
   display: inline-block;
-  background: #ffd700;
+  background: #C99A3D;
   color: #111;
   padding: 0.5rem 1rem;
   font-weight: bold;
@@ -199,19 +199,19 @@ blockquote {
 .slide-placeholder {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 2rem;
-  color: #ffd700;
+  color: #C99A3D;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.4rem;
   text-align: center;
   border-radius: 6px;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+  box-shadow: 0 0 10px rgba(201, 154, 61, 0.2);
   max-width: 90%;
   margin: auto;
   line-height: 1.6;
 }
 
 .slider-btn {
-  background-color: #ffd700;
+  background-color: #C99A3D;
   color: #111;
   border: none;
   padding: 0.75rem 1.25rem;
@@ -242,7 +242,7 @@ input, textarea {
 }
 
 button[type="submit"] {
-  background: #ffd700;
+  background: #C99A3D;
   color: #111;
   font-weight: bold;
   padding: 0.75rem;
